@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ОПОРА · Агентство недвижимости в Москве</title>
-<meta name="description" content="ОПОРА. Агентство недвижимости в Москве. Ведём вашу задачу с недвижимостью от первого вопроса до закрытой сделки. Спокойно, точно, без давления.">
+<meta name="description" content="ОПОРА. Агентство недвижимости в Москве. Покупка, продажа, инвестиции, управление жилыми и коммерческими объектами. Ведём задачу от первого вопроса до закрытой сделки.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23F6F1EB'/%3E%3Cpath transform='translate(13,13) scale(0.315)' d='M28,98 L28,54 A32,32 0 0 1 92,54 L92,98 L75,98 L75,58 A15,15 0 0 0 45,58 L45,98 Z' fill='%2326201A'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,29 +27,58 @@
   .logo{display:flex; align-items:center; gap:11px; text-decoration:none;}
   .logo svg{display:block;}
   .logo span{font-family:var(--serif); font-size:21px; letter-spacing:.02em; color:var(--ink);}
-  .nav-contact{font-size:15px; color:var(--umbra); text-decoration:none; transition:color .25s ease;}
-  .nav-contact:hover{color:var(--ink);}
-  .hero{padding:104px 0 116px;}
+  .nav-links{display:flex; gap:30px; align-items:center;}
+  .nav-links a{font-size:15px; color:var(--umbra); text-decoration:none; transition:color .25s ease;}
+  .nav-links a:hover{color:var(--ink);}
+  .sec{padding:92px 0;}
+  .sec-linen{background:var(--linen); border-top:1px solid var(--stone); border-bottom:1px solid var(--stone);}
+  .s-head{font-family:var(--serif); font-weight:500; font-size:25px; color:var(--ink); margin:0;}
+  .lead{font-size:18px; color:var(--umbra); margin:16px 0 0; max-width:580px;}
+  .hero{padding:96px 0 104px;}
   .kicker{font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--umbra); margin:0;}
   .hero h1{font-family:var(--serif); font-weight:500; font-size:clamp(27px,4.6vw,40px);
     line-height:1.26; color:var(--ink); margin:24px 0 0; max-width:660px;}
   .hero p{font-size:18px; color:var(--umbra); margin:26px 0 0; max-width:480px;}
   .cta{margin-top:40px; display:flex; align-items:center; gap:26px; flex-wrap:wrap;}
   .btn{display:inline-block; background:var(--ink); color:var(--paper); font-family:var(--sans);
-    font-size:15px; padding:14px 26px; border-radius:3px; text-decoration:none; transition:background .3s ease;}
+    font-size:15px; padding:14px 26px; border-radius:3px; text-decoration:none; border:0;
+    cursor:pointer; transition:background .3s ease;}
   .btn:hover{background:#3a3128;}
   .tlink{font-size:15px; color:var(--umbra); text-decoration:none;
     border-bottom:1px solid var(--stone); padding-bottom:2px; transition:color .25s ease,border-color .25s ease;}
   .tlink:hover{color:var(--ink); border-color:var(--umbra);}
-  .trust{background:var(--linen); border-top:1px solid var(--stone);}
-  .trust-inner{padding:84px 0 92px;}
-  .trust h2{font-family:var(--serif); font-weight:500; font-size:25px; color:var(--ink); margin:0;}
-  .cols{display:grid; grid-template-columns:repeat(3,1fr); gap:48px; margin-top:44px;}
+  .dirs{display:grid; grid-template-columns:1fr 1fr; gap:40px 48px; margin-top:46px;}
+  .dir h3{font-family:var(--serif); font-weight:500; font-size:20px; color:var(--ink); margin:0;}
+  .dir p{font-size:16px; color:var(--umbra); margin:12px 0 0; line-height:1.65;}
+  .cols{display:grid; grid-template-columns:repeat(3,1fr); gap:48px; margin-top:46px;}
   .col h3{font-family:var(--serif); font-weight:500; font-size:19px; color:var(--ink); margin:0;}
   .col p{font-size:16px; color:var(--umbra); margin:13px 0 0; line-height:1.65;}
-  .close{padding:88px 0 96px;}
-  .close p{font-size:21px; font-family:var(--serif); color:var(--ink); margin:0; max-width:560px; line-height:1.45;}
-  .close .cta{margin-top:32px;}
+  .market-lead{font-size:21px; font-family:var(--serif); color:var(--ink); margin:18px 0 0;
+    max-width:620px; line-height:1.45;}
+  .obs{display:grid; grid-template-columns:repeat(3,1fr); gap:44px; margin-top:46px;}
+  .obs h3{font-family:var(--serif); font-weight:500; font-size:18px; color:var(--ink); margin:0;}
+  .obs p{font-size:15px; color:var(--umbra); margin:11px 0 0; line-height:1.66;}
+  .mlink{margin:40px 0 0; font-size:15px; color:var(--umbra);}
+  .mlink a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--stone); padding-bottom:2px;}
+  .mlink a:hover{border-color:var(--umbra);}
+  .contact-lead{font-size:18px; color:var(--umbra); margin:16px 0 0; max-width:520px;}
+  .form{margin-top:38px; max-width:560px;}
+  .field{margin-bottom:24px;}
+  .field label{display:block; font-size:14px; color:var(--ink); margin-bottom:9px;}
+  .field input[type=text],.field textarea,.field select{
+    width:100%; font-family:var(--sans); font-size:16px; color:var(--ink);
+    background:#fff; border:1px solid var(--stone); border-radius:3px; padding:12px 13px;}
+  .field textarea{min-height:96px; resize:vertical;}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none; border-color:var(--umbra);}
+  .radio-row{display:flex; gap:22px; flex-wrap:wrap;}
+  .radio-row label{display:flex; align-items:center; gap:7px; font-size:15px;
+    color:var(--umbra); margin:0; cursor:pointer;}
+  .radio-row input{accent-color:var(--ink);}
+  .form-note{display:none; font-size:15px; color:var(--ink); background:#fff;
+    border:1px solid var(--stone); border-radius:3px; padding:13px 15px; margin:18px 0 0;}
+  .direct{margin-top:28px; font-size:15px; color:var(--umbra);}
+  .direct a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--stone); padding-bottom:1px;}
+  .direct a:hover{border-color:var(--umbra);}
   footer{background:var(--ink); color:var(--paper);}
   .foot-inner{padding:54px 0 58px; display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap;}
   .foot-logo{font-family:var(--serif); font-size:19px; color:var(--paper);}
@@ -64,11 +92,14 @@
   @media (max-width:720px){
     .wrap{padding:0 22px;}
     nav{padding:22px 0;}
-    .hero{padding:64px 0 72px;}
+    .nav-links{gap:18px;}
+    .nav-hide{display:none;}
+    .hero{padding:60px 0 68px;}
     .hero p{max-width:none;}
-    .trust-inner{padding:60px 0 64px;}
-    .cols{grid-template-columns:1fr; gap:34px; margin-top:32px;}
-    .close{padding:60px 0 68px;}
+    .sec{padding:60px 0;}
+    .dirs{grid-template-columns:1fr; gap:32px; margin-top:34px;}
+    .cols{grid-template-columns:1fr; gap:32px; margin-top:34px;}
+    .obs{grid-template-columns:1fr; gap:30px; margin-top:34px;}
     .foot-inner{flex-direction:column; gap:28px; padding:42px 0 46px;}
   }
 </style>
@@ -81,7 +112,11 @@
       <svg width="26" height="26" viewBox="0 0 120 120" aria-hidden="true"><path d="M28,98 L28,54 A32,32 0 0 1 92,54 L92,98 L75,98 L75,58 A15,15 0 0 0 45,58 L45,98 Z" fill="#26201A"/></svg>
       <span>ОПОРА</span>
     </a>
-    <a class="nav-contact" href="#contacts">Связаться</a>
+    <div class="nav-links">
+      <a class="nav-hide" href="#napravleniya">Направления</a>
+      <a class="nav-hide" href="#rynok">Рынок</a>
+      <a href="#contacts">Связаться</a>
+    </div>
   </nav>
 </header>
 
@@ -96,35 +131,116 @@
     </div>
   </section>
 
-  <section class="trust">
-    <div class="wrap trust-inner">
-      <h2>Как мы работаем</h2>
-      <div class="cols">
-        <div class="col">
-          <h3>Разбираемся</h3>
-          <p>Сначала понимаем вашу ситуацию и задачу. Пока не поняли, ничего не советуем.</p>
+  <section class="sec sec-linen" id="napravleniya">
+    <div class="wrap">
+      <h2 class="s-head">Чем мы занимаемся</h2>
+      <p class="lead">Четыре направления. В каждом ведём задачу целиком, а не отдельный её кусок.</p>
+      <div class="dirs">
+        <div class="dir">
+          <h3>Покупателям</h3>
+          <p>Подбираем объект под реальную задачу, а не под список параметров. Проверяем документы и историю до аванса. Доводим до сделки и до спокойного переезда.</p>
         </div>
-        <div class="col">
-          <h3>Ведём</h3>
-          <p>Стратегия, упаковка или подбор, показы, переговоры, юридическая проверка. Вы видите каждый шаг.</p>
+        <div class="dir">
+          <h3>Продавцам</h3>
+          <p>Готовим объект к продаже: стратегия, честная цена с первого дня, упаковка под конкретного покупателя. Сопровождаем сделку до конца.</p>
         </div>
-        <div class="col">
-          <h3>Доводим</h3>
-          <p>До закрытой сделки и до спокойствия. И остаёмся рядом после неё.</p>
+        <div class="dir">
+          <h3>Инвесторам</h3>
+          <p>Считаем доходность, ликвидность и риски до покупки, а не после. Помогаем собрать и вести портфель в Москве и Московской области.</p>
+        </div>
+        <div class="dir">
+          <h3>Управление объектами</h3>
+          <p>Берём на себя жилые и коммерческие объекты: арендаторы, документы, эксплуатация. Собственник видит результат, а не ежедневную рутину.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="wrap close">
-    <p>Если у вас есть задача с недвижимостью, расскажите о ней. Посмотрим вместе, спокойно.</p>
-    <div class="cta">
-      <a class="btn" href="#contacts">Написать нам</a>
+  <section class="sec" id="kak">
+    <div class="wrap">
+      <h2 class="s-head">Как мы работаем</h2>
+      <p class="lead">Один и тот же порядок в любой задаче. Он и делает работу спокойной.</p>
+      <div class="cols">
+        <div class="col">
+          <h3>Разбираемся</h3>
+          <p>Сначала понимаем вашу ситуацию и задачу. Пока не поняли, ничего не советуем и не продаём.</p>
+        </div>
+        <div class="col">
+          <h3>Ведём</h3>
+          <p>Стратегия, упаковка или подбор, показы, переговоры, юридическая проверка. Вы видите каждый шаг и понимаете, зачем он нужен.</p>
+        </div>
+        <div class="col">
+          <h3>Доводим</h3>
+          <p>До закрытой сделки и до спокойствия. Называем риски прямо, даже когда это неудобно. Остаёмся рядом и после сделки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-linen" id="rynok">
+    <div class="wrap">
+      <h2 class="s-head">Рынок Москвы и области</h2>
+      <p class="market-lead">Мы работаем с двумя разными рынками и не путаем их логику.</p>
+      <div class="obs">
+        <div>
+          <h3>Москва и область</h3>
+          <p>Город и Московская область живут по-разному. Одна и та же задача и один и тот же бюджет решаются в них не одинаково. Мы говорим, где ваша задача решается лучше, даже если ответ не очевиден.</p>
+        </div>
+        <div>
+          <h3>Ликвидность</h3>
+          <p>Ликвидность объекта зависит не только от цены. Чаще она зависит от того, кому и как объект показан. Квартиру, показанную не своему покупателю, рынок торгует вниз месяцами.</p>
+        </div>
+        <div>
+          <h3>Риск</h3>
+          <p>Дороже всего стоит непроверенная сделка и решение, принятое в спешке. Документы и историю объекта мы разбираем заранее, чтобы на сделке не было сюрпризов.</p>
+        </div>
+      </div>
+      <p class="mlink">Спокойные разборы рынка без рекламы объектов мы публикуем в <a href="https://t.me/oporaproperty">Telegram</a>.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="contacts">
+    <div class="wrap">
+      <h2 class="s-head">Расскажите о задаче</h2>
+      <p class="contact-lead">Опишите задачу в двух словах. Ответит человек, без скриптов и без давления. Если пока хотите просто разобраться, это тоже нормально.</p>
+      <!-- Форма Website V1. Отправка через выбранный канал связи. Поля name, channel, task, comment, source именованы под будущую передачу в amoCRM через webhook. -->
+      <form class="form" id="intake-form" novalidate>
+        <input type="hidden" name="source" value="site">
+        <div class="field">
+          <label for="f-name">Как к вам обращаться</label>
+          <input type="text" id="f-name" name="name" placeholder="Имя">
+        </div>
+        <div class="field">
+          <label>Удобный канал связи</label>
+          <div class="radio-row">
+            <label><input type="radio" name="channel" value="WhatsApp" checked> WhatsApp</label>
+            <label><input type="radio" name="channel" value="Telegram"> Telegram</label>
+            <label><input type="radio" name="channel" value="Email"> Email</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-task">Тип задачи</label>
+          <select id="f-task" name="task">
+            <option value="Покупка">Покупка</option>
+            <option value="Продажа">Продажа</option>
+            <option value="Инвестиции">Инвестиции</option>
+            <option value="Управление объектом">Управление объектом</option>
+            <option value="Пока просто разобраться">Пока просто разобраться</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-comment">Комментарий</label>
+          <textarea id="f-comment" name="comment" placeholder="Что у вас за задача с недвижимостью"></textarea>
+        </div>
+        <button type="submit" class="btn">Отправить</button>
+        <p class="form-note" id="form-note"></p>
+      </form>
+      <p class="direct">Или напишите напрямую: <a href="https://t.me/oporaproperty">Telegram</a>, <a href="https://wa.me/79953019525">WhatsApp</a>, <a href="mailto:info@oporaproperty.ru">info@oporaproperty.ru</a>.</p>
     </div>
   </section>
 </main>
 
-<footer id="contacts">
+<footer>
   <div class="wrap foot-inner">
     <div>
       <div class="foot-logo">ОПОРА</div>
@@ -133,6 +249,7 @@
     <div class="foot-col">
       <span class="h">Связаться</span>
       <a href="https://t.me/oporaproperty">Telegram</a><br>
+      <a href="https://wa.me/79953019525">WhatsApp</a><br>
       <a href="mailto:info@oporaproperty.ru">info@oporaproperty.ru</a>
     </div>
     <div class="foot-col">
@@ -143,6 +260,39 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var form = document.getElementById('intake-form');
+  if(!form) return;
+  var note = document.getElementById('form-note');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var fd = new FormData(form);
+    var name = (fd.get('name') || '').toString().trim();
+    var channel = fd.get('channel') || 'WhatsApp';
+    var task = fd.get('task') || '';
+    var comment = (fd.get('comment') || '').toString().trim();
+    var parts = ['Задача с недвижимостью с сайта oporaproperty.ru.'];
+    if(name) parts.push('Имя: ' + name);
+    if(task) parts.push('Тип задачи: ' + task);
+    if(comment) parts.push('Комментарий: ' + comment);
+    var msg = parts.join('\n');
+    try { if(navigator.clipboard) navigator.clipboard.writeText(msg); } catch(err){}
+    if(channel === 'Email'){
+      window.location.href = 'mailto:info@oporaproperty.ru?subject=' + encodeURIComponent('Задача с недвижимостью') + '&body=' + encodeURIComponent(msg);
+      note.textContent = 'Откроется почта с готовым письмом. Проверьте текст и отправьте, мы ответим.';
+    } else if(channel === 'Telegram'){
+      window.open('https://t.me/oporaproperty', '_blank');
+      note.textContent = 'Откроется наш Telegram. Текст задачи скопирован, вставьте его в сообщение нам.';
+    } else {
+      window.open('https://wa.me/79953019525?text=' + encodeURIComponent(msg), '_blank');
+      note.textContent = 'Откроется WhatsApp с готовым сообщением. Проверьте текст и отправьте, мы ответим.';
+    }
+    note.style.display = 'block';
+  });
+})();
+</script>
 
 </body>
 </html>
