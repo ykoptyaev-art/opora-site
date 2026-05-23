@@ -61,6 +61,12 @@
   .mlink{margin:40px 0 0; font-size:15px; color:var(--umbra);}
   .mlink a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--stone); padding-bottom:2px;}
   .mlink a:hover{border-color:var(--umbra);}
+  .jlist{list-style:none; margin:34px 0 0; padding:0; max-width:560px;}
+  .jlist li{padding:13px 0; border-bottom:1px solid var(--stone);}
+  .jlist li:first-child{border-top:1px solid var(--stone);}
+  .jlist li a{font-family:var(--serif); font-size:18px; color:var(--ink); text-decoration:none;
+    transition:color .25s ease;}
+  .jlist li a:hover{color:var(--umbra);}
   .contact-lead{font-size:18px; color:var(--umbra); margin:16px 0 0; max-width:520px;}
   .form{margin-top:38px; max-width:560px;}
   .field{margin-bottom:24px;}
@@ -114,6 +120,7 @@
     </a>
     <div class="nav-links">
       <a class="nav-hide" href="#napravleniya">Направления</a>
+      <a class="nav-hide" href="/zhurnal.html">Журнал</a>
       <a class="nav-hide" href="#rynok">Рынок</a>
       <a href="#contacts">Связаться</a>
     </div>
@@ -199,7 +206,22 @@
     </div>
   </section>
 
-  <section class="sec" id="contacts">
+  <section class="sec" id="zhurnal">
+    <div class="wrap">
+      <h2 class="s-head">Журнал</h2>
+      <p class="lead">Мы ведём журнал. Это не блог и не лента новостей, а место, где мы спокойно разбираем то, что важно понять до решения с недвижимостью.</p>
+      <ul class="jlist">
+        <li><a href="/zhurnal.html#likvidnost">Как понять ликвидность объекта</a></li>
+        <li><a href="/zhurnal.html#oshibki-pokupatelej">Ошибки покупателей</a></li>
+        <li><a href="/zhurnal.html#oshibki-prodavcov">Ошибки продавцов</a></li>
+        <li><a href="/zhurnal.html#razbor-rajona">Разбор района: тихие переулки центра</a></li>
+        <li><a href="/zhurnal.html#chego-ne-rekomenduem">Чего мы не рекомендуем</a></li>
+      </ul>
+      <p class="mlink"><a href="/zhurnal.html">Открыть журнал</a></p>
+    </div>
+  </section>
+
+  <section class="sec sec-linen" id="contacts">
     <div class="wrap">
       <h2 class="s-head">Расскажите о задаче</h2>
       <p class="contact-lead">Опишите задачу в двух словах. Ответит человек, без скриптов и без давления. Если пока хотите просто разобраться, это тоже нормально.</p>
